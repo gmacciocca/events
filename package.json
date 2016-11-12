@@ -1,0 +1,50 @@
+{
+  "version": "1.0.1",
+  "name": "@gmacciocca/events",
+  "description": "Events Kit.",
+  "keywords": [
+    "events"
+  ],
+  "main": "./lib/index.js",
+  "scripts": {
+    "lint": "eslint src",
+    "xprepublish": "npm run build",
+    "build": "npm run lint && npm run test && npm run _build",
+    "_build": "babel src --source-maps --out-dir lib",
+    "test": "mocha test --recursive",
+    "watch:test": "nodemon -w test -w ./src -e js -x npm test",
+    "travis-script": "npm run build"
+  },
+  "author": {
+    "name": "Gianluca Macciocca",
+    "email": "gianlucam@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-preset-es2015": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "babel-register": "^6.16.3",
+    "babelify": "^7.3.0",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
+    "chai-spies": "^0.7.1",
+    "del": "^2.2.2",
+    "eslint": "^3.8.1",
+    "mocha": "^3.1.2",
+    "nodemon": "^1.11.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gmacciocca/events.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gmacciocca/events/issues"
+  },
+  "homepage": "https://github.com/gmacciocca/events",
+  "readmeFilename": "README.md",
+  "gitHead": "b4ee5d2c2bdd159efdef4fb3d854a9e8722a3ae1",
+  "readme": "#hello!\n"
+}

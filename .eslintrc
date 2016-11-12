@@ -1,0 +1,36 @@
+{
+    "parser": "babel-eslint",
+    "rules": {
+        "space-in-parens": ["error", "never"],
+        "no-useless-constructor": "error",
+        "operator-linebreak": ["error", "after"],
+        "comma-spacing": "error",
+        "object-curly-spacing": ["error", "always"],
+        "space-before-function-paren": ["error", "never"],
+        "eqeqeq": "error",
+        "no-multi-spaces": "error",
+        "prefer-const": "error",
+        "space-infix-ops": "error",
+        "keyword-spacing": "error",
+        "eol-last": "error",
+        "indent": ["error", 4],
+        "quotes": ["error", "double"],
+        "semi": ["error", "always"]
+    },
+    "env": {
+        "es6": true,
+        "browser": true,
+        "node": true,
+        "mocha": true
+    },
+    "globals": {
+        "chai": false,
+        "sinon": true,
+        "expect": true
+    },
+    "extends": "eslint:recommended",
+    "ecmaFeatures": {
+        "jsx": true,
+        "experimentalObjectRestSpread": true
+    }
+}

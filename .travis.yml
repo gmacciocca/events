@@ -1,0 +1,10 @@
+language: node_js
+node_js:
+  - "4.4"
+before_install:
+  - "export TRAVIS_COMMIT_MSG=\"$(git log --format=%B --no-merges -n 1)\""
+  - echo "$TRAVIS_COMMIT_MSG" | grep 'WIP'; export WIP_COMMIT=$?; true
+install:
+  - if [ $WIP_COMMIT == 1 ] ; then npm install ; else echo "Skipping install" ; fi
+script:
+  - if [ $WIP_COMMIT == 1 ] ; then npm run travis-script ; else echo "Skipping script" ; fi
