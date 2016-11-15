@@ -1,6 +1,6 @@
 {
   "version": "0.1.0",
-  "name": "@gmacciocca/events",
+  "name": "life-events",
   "description": "Events Kit.",
   "keywords": [
     "events"
@@ -38,12 +38,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/gmacciocca/events.git"
+    "url": "git://github.com/gmacciocca/life-events.git"
   },
   "bugs": {
-    "url": "https://github.com/gmacciocca/events/issues"
+    "url": "https://github.com/gmacciocca/life-events/issues"
   },
-  "homepage": "https://github.com/gmacciocca/events",
+  "homepage": "https://github.com/gmacciocca/life-events",
   "readmeFilename": "README.md",
   "gitHead": "b4ee5d2c2bdd159efdef4fb3d854a9e8722a3ae1",
   "readme": "#hello!\n"

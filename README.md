@@ -1,3 +1,3 @@
-#Welcome to browser-events!
+#Welcome to life-events!
 
-Travis build status: [![Build Status](https://travis-ci.org/gmacciocca/events.svg?branch=master)](https://travis-ci.org/gmacciocca/events)
+Travis build status: [![Build Status](https://travis-ci.org/gmacciocca/life-events.svg?branch=master)](https://travis-ci.org/gmacciocca/life-events)
