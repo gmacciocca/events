@@ -35,10 +35,14 @@ export default class Events {
 
     fire(eventName, ...args) {
         this._init(eventName);
-        return this._on[eventName].map(({ callback, type }) => {
+        const retArray = [];
+        this._on[eventName].every(({ callback, type }) => {
             "once" === type ? this.off(eventName, callback) : noop;
-            return callback(...args);
+            const ret = callback(...args);
+            retArray.push(ret);
+            return (!ret || (ret instanceof Promise) || (!ret.stopEventPropagation));
         });
+        return retArray;
     }
 
     fireWait(eventName, ...args) {
